@@ -1,0 +1,91 @@
+import { Scale, Users, HandHeart } from "lucide-react";
+
+export const Expertises = () => {
+  const expertises = [
+    {
+      icon: Scale,
+      title: "Área Trabalhista",
+      description: "Assessoria completa em direito do trabalho, rescisões, acordos e regularizações trabalhistas.",
+      highlights: ["Rescisões", "Acordos trabalhistas", "Regularizações", "Defesa em processos"]
+    },
+    {
+      icon: Users,
+      title: "Área Previdenciária", 
+      description: "Especialistas em benefícios previdenciários, aposentadorias e revisões do INSS.",
+      highlights: ["Aposentadorias", "Benefícios INSS", "Revisões", "Perícias médicas"]
+    },
+    {
+      icon: HandHeart,
+      title: "Conciliação",
+      description: "Mediação e conciliação para resolução pacífica de conflitos trabalhistas e previdenciários.",
+      highlights: ["Mediação", "Acordos extrajudiciais", "Conciliação", "Resolução pacífica"]
+    }
+  ];
+
+  return (
+    <section className="py-20 bg-muted">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+            Nossas Áreas de Atuação
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            Três frentes especializadas para atender todas as suas necessidades jurídicas
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {expertises.map((expertise, index) => {
+            const IconComponent = expertise.icon;
+            return (
+              <div 
+                key={index}
+                className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 hover:transform hover:scale-105"
+              >
+                <div className="flex flex-col items-center text-center">
+                  {/* Ícone */}
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center mb-6">
+                    <IconComponent className="w-8 h-8 text-white" />
+                  </div>
+
+                  {/* Título */}
+                  <h3 className="text-xl font-bold text-foreground mb-4">
+                    {expertise.title}
+                  </h3>
+
+                  {/* Descrição */}
+                  <p className="text-muted-foreground mb-6 leading-relaxed">
+                    {expertise.description}
+                  </p>
+
+                  {/* Highlights */}
+                  <div className="space-y-2 w-full">
+                    {expertise.highlights.map((highlight, idx) => (
+                      <div key={idx} className="flex items-center">
+                        <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
+                        <span className="text-sm text-muted-foreground">{highlight}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-12">
+          <p className="text-muted-foreground mb-4">
+            Precisa de ajuda em alguma dessas áreas?
+          </p>
+          <button 
+            onClick={() => document.getElementById('cta-final')?.scrollIntoView({ behavior: 'smooth' })}
+            className="text-primary hover:text-primary-dark font-semibold transition-colors"
+          >
+            Fale conosco agora →
+          </button>
+        </div>
+      </div>
+    </section>
+  );
+};
