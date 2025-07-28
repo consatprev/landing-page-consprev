@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 export const Partners = () => {
   const partners = [
-    { name: "InterNegócios Soluções", description: "Consultoria empresarial completa" },
-    { name: "BenSeg", description: "Saúde e Segurança do Trabalho" },
-    { name: "InterContábil", description: "Serviços contábeis especializados" },
-    { name: "InterMed", description: "Medicina do trabalho e perícias" },
-    { name: "OAB", description: "Ordem dos Advogados do Brasil" },
-    { name: "INSS", description: "Instituto Nacional do Seguro Social" }
+    { name: "InterNegócios Soluções", description: "Consultoria empresarial completa", route: "/internegocios" },
+    { name: "BenSeg", description: "Saúde e Segurança do Trabalho", route: "/benseg" },
+    { name: "InterContábil", description: "Serviços contábeis especializados", route: "/intercontabil" },
+    { name: "InterMed", description: "Medicina do trabalho e perícias", route: "/intermed" },
+    { name: "OAB", description: "Ordem dos Advogados do Brasil", route: null },
+    { name: "INSS", description: "Instituto Nacional do Seguro Social", route: null }
   ];
 
   return (
@@ -26,24 +28,33 @@ export const Partners = () => {
             Grupo ConsAt'preV
           </h3>
           <div className="grid md:grid-cols-4 gap-6">
-            {partners.slice(0, 4).map((partner, index) => (
-              <div 
-                key={index}
-                className="bg-card p-6 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 text-center group hover:transform hover:scale-105"
-              >
-                <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="text-white font-bold text-lg">
-                    {partner.name.split(' ').map(word => word[0]).join('')}
-                  </span>
+            {partners.slice(0, 4).map((partner, index) => {
+              const CardContent = (
+                <div className="bg-card p-6 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 text-center group hover:transform hover:scale-105">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                    <span className="text-white font-bold text-lg">
+                      {partner.name.split(' ').map(word => word[0]).join('')}
+                    </span>
+                  </div>
+                  <h4 className="font-semibold text-foreground mb-2">
+                    {partner.name}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {partner.description}
+                  </p>
                 </div>
-                <h4 className="font-semibold text-foreground mb-2">
-                  {partner.name}
-                </h4>
-                <p className="text-sm text-muted-foreground">
-                  {partner.description}
-                </p>
-              </div>
-            ))}
+              );
+
+              return partner.route ? (
+                <Link key={index} to={partner.route} className="block">
+                  {CardContent}
+                </Link>
+              ) : (
+                <div key={index}>
+                  {CardContent}
+                </div>
+              );
+            })}
           </div>
         </div>
 
