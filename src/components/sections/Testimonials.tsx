@@ -150,7 +150,7 @@ export const Testimonials = () => {
             <div className="text-muted-foreground">Taxa de Sucesso</div>
           </div>
           <div className="p-6">
-            <div className="text-4xl font-bold text-secondary mb-2">+1000</div>
+            <div className="text-4xl font-bold text-secondary mb-2">+100</div>
             <div className="text-muted-foreground">Casos Resolvidos</div>
           </div>
           <div className="p-6">

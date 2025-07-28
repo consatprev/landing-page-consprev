@@ -5,7 +5,7 @@ export const Hero = () => {
   const whatsappMessage = encodeURIComponent(
     "Olá! Gostaria de solicitar uma análise gratuita da minha situação trabalhista/previdenciária."
   );
-  const whatsappNumber = "5511999999999"; // Substitua pelo número real
+  const whatsappNumber = "5513981158016"; // Substitua pelo número real
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

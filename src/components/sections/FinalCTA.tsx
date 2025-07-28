@@ -5,7 +5,7 @@ export const FinalCTA = () => {
   const whatsappMessage = encodeURIComponent(
     "Olá! Quero verificar se minha empresa está 100% em conformidade com a lei. Solicito uma análise gratuita."
   );
-  const whatsappNumber = "5511999999999"; // Substitua pelo número real
+  const whatsappNumber = "5513981158016"; // Substitua pelo número real
 
   const risks = [
     "Multas trabalhistas inesperadas",
@@ -107,10 +107,10 @@ export const FinalCTA = () => {
                 <CTAButton
                   variant="phone"
                   size="lg"
-                  href="tel:+5511999999999"
+                  href="tel:+5513981158016"
                   className="bg-white/20 hover:bg-white/30 text-white border-2 border-white"
                 >
-                  📞 (11) 9999-9999
+                  📞 (13) 98115-8016
                 </CTAButton>
               </div>
             </div>

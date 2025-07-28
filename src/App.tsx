@@ -9,7 +9,7 @@ import BenSeg from "./pages/BenSeg";
 import InterContabil from "./pages/InterContabil";
 import InterNegocios from "./pages/InterNegocios";
 import InterMed from "./pages/InterMed";
-
+import ScrollToTop from "./lib/scrollToTop";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -18,6 +18,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/benseg" element={<BenSeg />} />

@@ -56,7 +56,7 @@ export const About = () => {
 
             <div className="mt-8 flex flex-wrap gap-4">
               <div className="bg-primary/10 px-4 py-2 rounded-full">
-                <span className="text-primary font-semibold">+1000 casos resolvidos</span>
+                <span className="text-primary font-semibold">+100 casos resolvidos</span>
               </div>
               <div className="bg-secondary/10 px-4 py-2 rounded-full">
                 <span className="text-secondary font-semibold">15 anos no mercado</span>
