@@ -6,45 +6,23 @@ export const Testimonials = () => {
 
   const testimonials = [
     {
-      name: "Maria Silva",
-      role: "Empresária - Setor Alimentício",
-      company: "Restaurante Sabor & Cia",
-      content: "A ConsAt'preV nos ajudou a regularizar toda nossa situação trabalhista. Evitamos multas de mais de R$ 50.000 e agora temos tranquilidade para focar no crescimento do negócio.",
+      name: "Helaine",
+      role: "Beneficiária",
+      company: "Pensão por servidor público",
+      content:
+        "Fiquei insegura vivendo apenas do BPC-Loas, mas a ConsAt'preV me orientou e em 6 meses consegui a pensão do meu pai. Hoje estou amparada e muito agradecida!",
       rating: 5,
-      result: "Economia de R$ 50.000 em multas"
+      result: "Pensão aprovada em 6 meses",
     },
     {
-      name: "João Santos", 
-      role: "Aposentado",
-      company: "Metalúrgico - 35 anos",
-      content: "Depois de 3 anos tentando minha aposentadoria especial sozinho, a ConsAt'preV resolveu em 6 meses. Profissionais competentes e atenciosos. Recomendo!",
+      name: "Nilo",
+      role: "Beneficiário",
+      company: "INSS",
+      content:
+        "Fui muito bem atendido pela ConsApreV. Consegui meu benefício junto com minha esposa e hoje estou mais tranquilo, mesmo com problemas de saúde. Sou muito grato pela atenção e dedicação da equipe.",
       rating: 5,
-      result: "Aposentadoria aprovada em 6 meses"
+      result: "Benefício concedido",
     },
-    {
-      name: "Ana Costa",
-      role: "Gestora de RH",
-      company: "TechSolutions Ltda",
-      content: "O compliance trabalhista nunca foi tão tranquilo. A equipe da ConsAt'preV nos orienta em cada processo e mantém nossa empresa sempre em conformidade.",
-      rating: 5,
-      result: "100% de conformidade legal"
-    },
-    {
-      name: "Carlos Oliveira",
-      role: "Microempreendedor",
-      company: "Oficina Mecânica",
-      content: "Ação trabalhista que poderia quebrar meu negócio foi resolvida com um acordo justo. A ConsAt'preV salvou minha empresa e minha família.",
-      rating: 5,
-      result: "Acordo favorável em ação trabalhista"
-    },
-    {
-      name: "Lucia Ferreira",
-      role: "Viúva",
-      company: "Beneficiária INSS",
-      content: "Consegui minha pensão por morte depois de meses de negativas. O atendimento foi humano e eficiente. Gratidão eterna à equipe!",
-      rating: 5,
-      result: "Pensão por morte aprovada"
-    }
   ];
 
   const nextTestimonial = () => {
@@ -52,7 +30,7 @@ export const Testimonials = () => {
   };
 
   const prevTestimonial = () => {
-    setCurrentTestimonial((prev) => 
+    setCurrentTestimonial((prev) =>
       prev === 0 ? testimonials.length - 1 : prev - 1
     );
   };
@@ -67,7 +45,8 @@ export const Testimonials = () => {
             O que nossos clientes dizem
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Histórias reais de pessoas que transformaram suas vidas com nossa assessoria
+            Histórias reais de pessoas que transformaram suas vidas com nossa
+            assessoria
           </p>
         </div>
 
@@ -83,7 +62,7 @@ export const Testimonials = () => {
                 <ChevronLeft className="w-5 h-5 text-primary" />
               </button>
             </div>
-            
+
             <div className="absolute top-1/2 -translate-y-1/2 -right-4 md:-right-8">
               <button
                 onClick={nextTestimonial}
@@ -98,7 +77,10 @@ export const Testimonials = () => {
               {/* Estrelas */}
               <div className="flex justify-center mb-6">
                 {[...Array(current.rating)].map((_, i) => (
-                  <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
+                  <Star
+                    key={i}
+                    className="w-5 h-5 text-yellow-400 fill-current"
+                  />
                 ))}
               </div>
 
@@ -117,9 +99,7 @@ export const Testimonials = () => {
                 <div className="font-semibold text-foreground text-lg">
                   {current.name}
                 </div>
-                <div className="text-muted-foreground">
-                  {current.role}
-                </div>
+                <div className="text-muted-foreground">{current.role}</div>
                 <div className="text-primary text-sm font-medium">
                   {current.company}
                 </div>
@@ -134,9 +114,9 @@ export const Testimonials = () => {
                 key={index}
                 onClick={() => setCurrentTestimonial(index)}
                 className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  index === currentTestimonial 
-                    ? 'bg-primary scale-125' 
-                    : 'bg-border hover:bg-primary/50'
+                  index === currentTestimonial
+                    ? "bg-primary scale-125"
+                    : "bg-border hover:bg-primary/50"
                 }`}
               />
             ))}

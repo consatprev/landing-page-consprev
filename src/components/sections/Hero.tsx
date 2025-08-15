@@ -61,7 +61,7 @@ export const Hero = () => {
           <div className="mt-12 flex flex-wrap justify-center gap-8 text-sm text-gray-200">
             <div className="flex items-center">
               <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>
-              + 1000 casos resolvidos
+              + 100 casos resolvidos
             </div>
             <div className="flex items-center">
               <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>

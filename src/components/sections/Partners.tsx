@@ -2,12 +2,32 @@ import { Link } from "react-router-dom";
 
 export const Partners = () => {
   const partners = [
-    { name: "InterNegócios Soluções", description: "Consultoria empresarial completa", route: "/internegocios" },
-    { name: "BenSeg", description: "Saúde e Segurança do Trabalho", route: "/benseg" },
-    { name: "InterContábil", description: "Serviços contábeis especializados", route: "/intercontabil" },
-    { name: "InterMed", description: "Medicina do trabalho e perícias", route: "/intermed" },
+    {
+      name: "InterNegócios Soluções",
+      description: "Consultoria empresarial completa",
+      route: "/internegocios",
+    },
+    {
+      name: "BenSeg",
+      description: "Saúde e Segurança do Trabalho",
+      route: "/benseg",
+    },
+    {
+      name: "InterContábil",
+      description: "Serviços contábeis especializados",
+      route: "/intercontabil",
+    },
+    {
+      name: "InterMed",
+      description: "Medicina do trabalho e perícias",
+      route: "/intermed",
+    },
     { name: "OAB", description: "Ordem dos Advogados do Brasil", route: null },
-    { name: "INSS", description: "Instituto Nacional do Seguro Social", route: null }
+    {
+      name: "INSS",
+      description: "Instituto Nacional do Seguro Social",
+      route: null,
+    },
   ];
 
   return (
@@ -18,7 +38,8 @@ export const Partners = () => {
             Nossos Parceiros
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Trabalhamos em conjunto com instituições renomadas para oferecer o melhor atendimento
+            Trabalhamos em conjunto com instituições renomadas para oferecer o
+            melhor atendimento
           </p>
         </div>
 
@@ -33,7 +54,10 @@ export const Partners = () => {
                 <div className="bg-card p-6 rounded-xl shadow-soft hover:shadow-medium transition-all duration-300 text-center group hover:transform hover:scale-105">
                   <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
                     <span className="text-white font-bold text-lg">
-                      {partner.name.split(' ').map(word => word[0]).join('')}
+                      {partner.name
+                        .split(" ")
+                        .map((word) => word[0])
+                        .join("")}
                     </span>
                   </div>
                   <h4 className="font-semibold text-foreground mb-2">
@@ -41,6 +65,24 @@ export const Partners = () => {
                   </h4>
                   <p className="text-sm text-muted-foreground">
                     {partner.description}
+                  </p>
+                  <p className="flex ml-5 items-center justify-center gap-2 text-sm font-semibold underline text-secondary cursor-pointer transition-colors group-hover:text-secondary-dark">
+                    Ver detalhes
+                    {/* Ícone de seta para a direita SVG */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
                   </p>
                 </div>
               );
@@ -50,9 +92,7 @@ export const Partners = () => {
                   {CardContent}
                 </Link>
               ) : (
-                <div key={index}>
-                  {CardContent}
-                </div>
+                <div key={index}>{CardContent}</div>
               );
             })}
           </div>
@@ -64,10 +104,15 @@ export const Partners = () => {
             Quer ser nosso parceiro?
           </h3>
           <p className="text-muted-foreground mb-6">
-            Construímos relacionamentos duradouros baseados na confiança e resultados mútuos
+            Construímos relacionamentos duradouros baseados na confiança e
+            resultados mútuos
           </p>
-          <button 
-            onClick={() => document.getElementById('footer')?.scrollIntoView({ behavior: 'smooth' })}
+          <button
+            onClick={() =>
+              document
+                .getElementById("footer")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="text-primary hover:text-primary-dark font-semibold transition-colors"
           >
             Entre em contato →
