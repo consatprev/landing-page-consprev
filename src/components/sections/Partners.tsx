@@ -1,11 +1,16 @@
 import { Link } from "react-router-dom";
+import { CTAButton } from "../ui/cta-button";
 
 export const Partners = () => {
+  const msg = "Olá, gostaria de mais informações sobre como ser parceiro.";
+  const whatsappMessage = encodeURIComponent(msg);
+  const whatsappNumber = "5513981158016"; // Substitua pelo número real
+
   const partners = [
     {
       name: "InterNegócios Soluções",
       description: "Consultoria empresarial completa",
-      route: "/internegocios",
+      // route: "/internegocios",
     },
     {
       name: "BenSeg",
@@ -15,18 +20,12 @@ export const Partners = () => {
     {
       name: "InterContábil",
       description: "Serviços contábeis especializados",
-      route: "/intercontabil",
+      // route: "/intercontabil",
     },
     {
       name: "InterMed",
       description: "Medicina do trabalho e perícias",
-      route: "/intermed",
-    },
-    { name: "OAB", description: "Ordem dos Advogados do Brasil", route: null },
-    {
-      name: "INSS",
-      description: "Instituto Nacional do Seguro Social",
-      route: null,
+      // route: "/intermed",
     },
   ];
 
@@ -38,7 +37,7 @@ export const Partners = () => {
             Nossos Parceiros
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Trabalhamos em conjunto com instituições renomadas para oferecer o
+            Trabalhamos em conjunto com instituições para oferecer o
             melhor atendimento
           </p>
         </div>
@@ -107,16 +106,15 @@ export const Partners = () => {
             Construímos relacionamentos duradouros baseados na confiança e
             resultados mútuos
           </p>
-          <button
-            onClick={() =>
-              document
-                .getElementById("footer")
-                ?.scrollIntoView({ behavior: "smooth" })
-            }
-            className="text-primary hover:text-primary-dark font-semibold transition-colors"
-          >
-            Entre em contato →
-          </button>
+          
+          <CTAButton
+                          variant="secondary"
+                          size="lg"
+                          href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+                          className="bg-green-500 hover:bg-green-600 text-white shadow-2xl hover:shadow-3xl transform hover:scale-105"
+                        >
+                           Entre em contato →
+          </CTAButton>
         </div>
       </div>
     </section>

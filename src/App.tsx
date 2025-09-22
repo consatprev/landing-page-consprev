@@ -10,6 +10,7 @@ import InterContabil from "./pages/InterContabil";
 import InterNegocios from "./pages/InterNegocios";
 import InterMed from "./pages/InterMed";
 import ScrollToTop from "./lib/scrollToTop";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -28,6 +29,7 @@ const App = () => (
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <ScrollToTopButton />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

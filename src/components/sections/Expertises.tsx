@@ -73,18 +73,7 @@ export const Expertises = () => {
           })}
         </div>
 
-        {/* Call to Action */}
-        <div className="text-center mt-12">
-          <p className="text-muted-foreground mb-4">
-            Precisa de ajuda em alguma dessas áreas?
-          </p>
-          <button 
-            onClick={() => document.getElementById('cta-final')?.scrollIntoView({ behavior: 'smooth' })}
-            className="text-primary hover:text-primary-dark font-semibold transition-colors"
-          >
-            Fale conosco agora →
-          </button>
-        </div>
+        
       </div>
     </section>
   );

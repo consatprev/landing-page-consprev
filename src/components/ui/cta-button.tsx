@@ -51,12 +51,12 @@ export const CTAButton = ({
 
   const buttonContent = (
     <Button
-      className={cn(
-        "font-semibold rounded-lg transition-all duration-300 transform hover:scale-105",
-        getVariantStyles(),
-        getSizeStyles(),
-        className
-      )}
+      className={
+        `font-semibold rounded-lg transition-all duration-300 transform hover:scale-105 
+        ${getVariantStyles()} 
+        ${getSizeStyles()}
+        ${className}`
+      }
       onClick={onClick}
     >
       {getIcon()}

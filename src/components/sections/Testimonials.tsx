@@ -123,21 +123,7 @@ export const Testimonials = () => {
           </div>
         </div>
 
-        {/* Estatísticas */}
-        <div className="grid md:grid-cols-3 gap-8 mt-16 text-center">
-          <div className="p-6">
-            <div className="text-4xl font-bold text-primary mb-2">98%</div>
-            <div className="text-muted-foreground">Taxa de Sucesso</div>
-          </div>
-          <div className="p-6">
-            <div className="text-4xl font-bold text-secondary mb-2">+100</div>
-            <div className="text-muted-foreground">Casos Resolvidos</div>
-          </div>
-          <div className="p-6">
-            <div className="text-4xl font-bold text-primary mb-2">4.9</div>
-            <div className="text-muted-foreground">Avaliação Média</div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

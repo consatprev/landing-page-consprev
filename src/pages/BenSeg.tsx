@@ -57,6 +57,10 @@ const BenSeg = () => {
     }
   ];
 
+  const whatsappMessage = encodeURIComponent("Olá! Quero saber mais sobre as soluções de segurança do trabalho da BenSeg.");
+  const whatsappMessage2 = encodeURIComponent("Olá! Quero solicitar um orçamento para serviços de segurança do trabalho.");
+  const whatsappNumber = "5513981158016"; 
+
   return (
     <div className="min-h-screen bg-yellow-50">
       {/* Header */}
@@ -64,7 +68,7 @@ const BenSeg = () => {
         <div className="container mx-auto px-4 flex items-center justify-between">
           <Link to="/" className="flex items-center text-white hover:text-yellow-100 transition-colors">
             <ArrowLeft className="w-5 h-5 mr-2" />
-            Voltar para ConsAt'preV
+            <strong>Voltar para ConsAt'preV</strong>
           </Link>
           <h1 className="text-2xl font-bold">BenSeg</h1>
         </div>
@@ -80,7 +84,9 @@ const BenSeg = () => {
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             Proteção integral para sua empresa e colaboradores com soluções completas em segurança ocupacional
           </p>
-          <CTAButton variant="secondary" size="lg">
+          <CTAButton variant="secondary"
+          href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+          size="lg">
             Solicite uma Consultoria Gratuita
           </CTAButton>
         </div>
@@ -91,7 +97,7 @@ const BenSeg = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h3 className="text-3xl font-bold text-center text-gray-800 mb-8">Quem Somos</h3>
-            <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="grid md:grid-cols-2 gap-8 items-center gap-x-[5rem]">
               <div>
                 <h4 className="text-xl font-semibold text-gray-800 mb-4">Nossa História</h4>
                 <p className="text-gray-600 mb-6">
@@ -209,10 +215,10 @@ const BenSeg = () => {
             Fale conosco e garanta a proteção total do seu ambiente de trabalho.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <CTAButton variant="whatsapp" size="lg">
-              Falar com Especialista
-            </CTAButton>
-            <CTAButton variant="secondary" size="lg">
+            
+            <CTAButton variant="secondary" 
+            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage2}`}
+            size="lg">
               Solicitar Orçamento
             </CTAButton>
           </div>
@@ -222,7 +228,7 @@ const BenSeg = () => {
       {/* Footer */}
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 BenSeg - Segurança do Trabalho. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} BenSeg - Segurança do Trabalho. Todos os direitos reservados.</p>
           <p className="text-sm text-gray-400 mt-2">Uma empresa do Grupo ConsAt'preV</p>
         </div>
       </footer>

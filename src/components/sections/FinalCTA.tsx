@@ -79,8 +79,8 @@ export const FinalCTA = () => {
 
           {/* Urgência e Escassez */}
           <div className="text-center mb-12">
-            <div className="inline-block bg-yellow-400 text-black px-6 py-3 rounded-full font-bold mb-6 animate-pulse">
-              🚨 ANÁLISE GRATUITA - VAGAS LIMITADAS
+            <div className="inline-block bg-gray-600 text-green-300 px-6 py-3 rounded-full font-bold mb-6 ">
+              ANÁLISE GRATUITA - VAGAS LIMITADAS
             </div>
             <p className="text-lg text-gray-100 mb-2">
               Apenas <strong className="text-secondary-light">15 análises gratuitas</strong> por mês
@@ -97,20 +97,20 @@ export const FinalCTA = () => {
                 variant="whatsapp"
                 size="lg"
                 href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-                className="bg-green-500 hover:bg-green-600 text-white shadow-2xl hover:shadow-3xl transform hover:scale-105 animate-pulse"
+                className="bg-green-500 hover:bg-green-600 text-white shadow-2xl hover:shadow-3xl transform hover:scale-105"
               >
-                📱 SOLICITAR ANÁLISE GRATUITA
+                SOLICITAR ANÁLISE GRATUITA
               </CTAButton>
               
               <div className="text-center md:text-left">
-                <div className="text-sm text-gray-200">ou ligue agora:</div>
+                <div className="text-sm text-gray-200 relative bottom-3">ou ligue agora:</div>
                 <CTAButton
                   variant="phone"
                   size="lg"
                   href="tel:+5513981158016"
-                  className="bg-white/20 hover:bg-white/30 text-white border-2 border-white"
+                  className="bg-secondary hover:bg-secondary-dark text-secondary-foreground shadow-lg hover:shadow-xl relative bottom-[0.65rem]"
                 >
-                  📞 (13) 98115-8016
+                  (13) 98115-8016
                 </CTAButton>
               </div>
             </div>

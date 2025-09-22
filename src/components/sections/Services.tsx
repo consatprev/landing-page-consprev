@@ -193,7 +193,7 @@ const servicosEmpresas = [
               <div key={carousel.id} className="bg-card rounded-2xl p-8 shadow-soft">
                 {/* Header do Carrossel */}
                 <div className="flex items-center mb-8">
-                  <div className={`w-12 h-12 bg-gradient-to-br from-${carousel.color} to-${carousel.color}-light rounded-lg flex items-center justify-center mr-4`}>
+                  <div className={`w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center mr-4`}>
                     <IconComponent className="w-6 h-6 text-white" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground">{carousel.title}</h3>

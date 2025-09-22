@@ -43,7 +43,7 @@ export const Hero = () => {
               variant="whatsapp"
               size="lg"
               href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-              className="animate-pulse"
+              
             >
               Solicite uma análise gratuita
             </CTAButton>
