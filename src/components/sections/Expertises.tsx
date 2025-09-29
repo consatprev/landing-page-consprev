@@ -5,20 +5,22 @@ export const Expertises = () => {
     {
       icon: Scale,
       title: "Área Trabalhista",
-      description: "Assessoria completa em direito do trabalho, rescisões, acordos e regularizações trabalhistas.",
-      highlights: ["Rescisões", "Acordos trabalhistas", "Regularizações", "Defesa em processos"]
+      //description: "Assessoria completa em direito do trabalho, rescisões, acordos e regularizações trabalhistas.",
+      highlights: ["Revisão de cálculos rescisórios", "Conciliações e acordos extrajudiciais", "Regularizações", 
+        "Apoio técnico para postular ou se defender em juízo (sem advogado)"]
     },
     {
       icon: Users,
       title: "Área Previdenciária", 
-      description: "Especialistas em benefícios previdenciários, aposentadorias e revisões do INSS.",
-      highlights: ["Aposentadorias", "Benefícios INSS", "Revisões", "Perícias médicas"]
+      //description: "Especialistas em benefícios previdenciários, aposentadorias e revisões do INSS.",
+      highlights: ["Aposentadorias", "Benefícios INSS", "Orientação para perícias médicas", "Revisões de aposentadorias"]
     },
     {
       icon: HandHeart,
-      title: "Conciliação",
-      description: "Mediação e conciliação para resolução pacífica de conflitos trabalhistas e previdenciários.",
-      highlights: ["Mediação", "Acordos extrajudiciais", "Conciliação", "Resolução pacífica"]
+      title: "Intermediação e Agenciamento",
+      //description: "Mediação e conciliação para resolução pacífica de conflitos trabalhistas e previdenciários.",
+      highlights: ["Intermediação jurídica para resolução de conflitos", "Agenciamento de serviços e negócios", 
+        "Conciliação e acordos extrajudiciais", "Preparação de documentos"]
     }
   ];
 
@@ -53,11 +55,11 @@ export const Expertises = () => {
                     {expertise.title}
                   </h3>
 
-                  {/* Descrição */}
+                  {/* Descrição 
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     {expertise.description}
                   </p>
-
+*/}
                   {/* Highlights */}
                   <div className="space-y-2 w-full">
                     {expertise.highlights.map((highlight, idx) => (

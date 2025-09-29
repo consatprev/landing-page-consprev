@@ -1,3 +1,4 @@
+import { Description } from "@radix-ui/react-toast";
 import { Building2, User, Globe, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
@@ -10,14 +11,19 @@ export const Services = () => {
 
 const servicosEmpresas = [
   {
+    title: "Trabalho e Previdência",
+    description: "Oferecemos suporte técnico e informação detalhada para garantir que sua empresa cumpra os deveres previdenciários e aproveite todos os direitos. Acompanhamos requerimentos, revisões e asseguramos os melhores resultados.",
+    benefits: ["Cálculos precisos", "Controle de obrigações", "Relatórios gerenciais"]
+  },
+  {
     title: "Saúde e Segurança do Trabalho",
     description: "Elaboramos PGR, Laudos como PCMSO, LTCAT, LTI, LTP e Declaração de Inexistência de Riscos. Auxiliamos no controle de EPIs e na manutenção da saúde dos colaboradores, garantindo comodidade e cumprimento das obrigações do e-Social e do Fisco.",
     benefits: ["Auditoria trabalhista", "Regularização de documentos", "Prevenção de multas"]
   },
   {
-    title: "Trabalho e Previdência",
-    description: "Oferecemos suporte técnico e informação detalhada para garantir que sua empresa cumpra os deveres previdenciários e aproveite todos os direitos. Acompanhamos requerimentos, revisões e asseguramos os melhores resultados.",
-    benefits: ["Cálculos precisos", "Controle de obrigações", "Relatórios gerenciais"]
+    title: "Intermediação e Agenciamento de Serviços e Negócios",
+    description: "Conectando pequenas e médias empresas a soluções estratégicas, profissionais especializados e oportunidades comerciais que impulsionam resultados com segurança jurídica e eficiência operacional",
+    benefits: ["Eficiência operacional", "Soluções estratégicas", "Segurança jurídica"]
   },
   {
     title: "Contabilidade Geral e Fiscal",
@@ -61,21 +67,12 @@ const servicosEmpresas = [
     ]
   },
   {
-    title: "Auxílios e Pensões Sociais",
-    description: "Suporte completo para solicitar, acompanhar e manter seus benefícios sociais de forma prática.",
+    title: "Pensões, Auxílios e Benefícios Sociais",
+    description: "Suporte completo para solicitar, acompanhar e manter seus benefícios sociais de forma eficaz  junto ao INSS ou previdência privada",
     benefits: [
       "Requerimento e prorrogação de auxílio-doença",
       "Concessão e manutenção de pensão por morte",
       "Solicitação de auxílio-acidente e acompanhamento"
-    ]
-  },
-  {
-    title: "Apoio Jurídico ao Jus Postulandi",
-    description: "Empoderamento legal para que você possa se defender e reivindicar seus direitos de forma autônoma.",
-    benefits: [
-      "Orientação em pedidos de horas extras e adicionais",
-      "Cálculo e reivindicação de verbas rescisórias",
-      "Apoio em casos de assédio moral e direitos violados"
     ]
   },
   {
@@ -86,7 +83,16 @@ const servicosEmpresas = [
       "Planejamento e otimização de contribuições",
       "Definição do tempo ideal para requerer benefícios"
     ]
-  }
+  },
+  {
+    title: "Apoio Jurídico ao Jus Postulandi (sem advogado)",
+    description: "Empoderamento legal para que você possa se defender e reivindicar seus direitos de forma autônoma.",
+    benefits: [
+      "Orientação em pedidos de horas extras e adicionais",
+      "Cálculo e reivindicação de verbas rescisórias",
+      "Apoio em casos de assédio moral e direitos violados"
+    ]
+  },
 ];
 
 

@@ -4,7 +4,7 @@ export const About = () => {
   const values = [
     {
       icon: Award,
-      title: "Excelência",
+      title: "Comprometimento",
       description: "Compromisso com a qualidade e resultados em cada caso"
     },
     {
@@ -15,7 +15,7 @@ export const About = () => {
     {
       icon: Heart,
       title: "Humanização",
-      description: "Atendimento próximo e compreensivo às necessidades"
+      description: "Atendimento próximo e compreensivo cada cliente é único e merece cuidado"
     },
     {
       icon: TrendingUp,
@@ -31,7 +31,7 @@ export const About = () => {
           {/* História da Empresa */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Sobre a ConsAt'preV
+              Quem Somos
             </h2>
             
             <div className="prose prose-lg text-muted-foreground space-y-4">
@@ -42,13 +42,13 @@ export const About = () => {
               </p>
               
               <p>
-                Nossa missão é <strong className="text-secondary">democratizar o acesso à justiça</strong>, 
+                Nossa missão é <strong className="text-secondary">democratizar o acesso aos orgão públicos e à justiça</strong>, 
                 fornecendo orientação clara e eficiente para empresas e cidadãos que buscam 
                 regularizar sua situação e garantir seus direitos.
               </p>
               
               <p>
-                Através das nossas submarcas - InterNegócios Soluções, BenSeg, InterContábil 
+                Através das nossas submarcas (marcas técnicas especializadas) - InterNegócios Soluções, BenSeg, InterContábil 
                 e InterMed - oferecemos um <strong className="text-primary">ecossistema completo</strong> 
                 de soluções jurídicas e empresariais.
               </p>
@@ -69,6 +69,17 @@ export const About = () => {
 
           {/* Valores */}
           <div>
+            <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
+              Nosso Propósito
+            </h3>
+            <div className="prose prose-lg text-muted-foreground space-y-4">
+              <p>
+                Inspirar <strong className="text-primary">confiança, proteger direitos e promover dignidade</strong>. Transformamos desafios
+jurídicos em soluções que respeitam o ser humano em sua totalidade.
+              </p>
+            </div>
+
+
             <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
               Nossos Valores
             </h3>
