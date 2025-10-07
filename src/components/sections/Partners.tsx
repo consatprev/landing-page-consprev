@@ -34,7 +34,7 @@ export const Partners = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            Nossos Parceiros
+            Grupo ConsAt'preV
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Trabalhamos em conjunto com instituições para oferecer o
@@ -44,9 +44,6 @@ export const Partners = () => {
 
         {/* Submarcas ConsAt'preV */}
         <div className="mb-12">
-          <h3 className="text-xl font-semibold text-center text-foreground mb-8">
-            Grupo ConsAt'preV
-          </h3>
           <div className="grid md:grid-cols-4 gap-6">
             {partners.slice(0, 4).map((partner, index) => {
               const CardContent = (

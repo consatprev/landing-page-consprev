@@ -32,6 +32,18 @@ export const About = () => {
   return (
     <section className="py-20 bg-background" id="about">
       <div className="container mx-auto px-4">
+        {/* Propósito centralizado */}
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+            Nosso Propósito
+          </h2>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-lg text-muted-foreground italic text-justify">
+              "Inspirar <strong className="text-primary">confiança</strong>, proteger <strong className="text-primary">direitos</strong> e promover <strong className="text-primary">dignidade</strong>. Transformamos desafios jurídicos em soluções que respeitam o ser humano em sua totalidade."
+            </p>
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* História da Empresa */}
           <div>
@@ -39,21 +51,16 @@ export const About = () => {
               Nossa História
             </h2>
             
-            {/* Espaço reservado para imagem */}
-            <div className="mb-6 bg-muted rounded-xl p-12 text-center border-2 border-dashed border-border">
-              <p className="text-muted-foreground italic">(Espaço reservado para imagem)</p>
-            </div>
-            
             <div className="prose prose-lg text-muted-foreground space-y-4">
-              <p>
+              <p className="text-justify">
                 A ConsAt'preV nasceu com o propósito de oferecer assessoria jurídica especializada e humanizada nas áreas trabalhista e previdenciária.
               </p>
               
-              <p>
+              <p className="text-justify">
                 Nossa missão é <strong className="text-secondary">democratizar o acesso à Justiça e aos órgãos públicos</strong>, oferecendo orientação clara e eficiente para empresas e cidadãos que buscam regularizar sua situação e garantir seus direitos.
               </p>
               
-              <p>
+              <p className="text-justify">
                 Através de nossas submarcas — <strong className="text-primary">BenSeg, InterNegócios, InterContábil e InterJuridic</strong> — oferecemos um <strong className="text-primary">ecossistema completo</strong> de soluções jurídicas e empresariais.
               </p>
             </div>
@@ -71,18 +78,8 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Propósito e Valores */}
+          {/* Valores */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
-              Nosso Propósito
-            </h3>
-            <div className="prose prose-lg text-muted-foreground text-center mb-8">
-              <p className="italic">
-                "Inspirar <strong className="text-primary">confiança</strong>, proteger <strong className="text-primary">direitos</strong> e promover <strong className="text-primary">dignidade</strong>. Transformamos desafios jurídicos em soluções que respeitam o ser humano em sua totalidade."
-              </p>
-            </div>
-
-
             <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
               Valores
             </h3>

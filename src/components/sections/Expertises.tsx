@@ -54,30 +54,25 @@ export const Expertises = () => {
             return (
               <div 
                 key={index}
-                className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 hover:transform hover:scale-105"
+                className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 hover:transform hover:scale-105 h-full flex flex-col"
               >
-                <div className="flex flex-col items-center text-center">
+                <div className="flex flex-col items-center text-center flex-1">
                   {/* Ícone */}
                   <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center mb-6">
                     <IconComponent className="w-8 h-8 text-white" />
                   </div>
 
                   {/* Título */}
-                  <h3 className="text-xl font-bold text-foreground mb-4">
+                  <h3 className="text-xl font-bold text-foreground mb-6">
                     {expertise.title}
                   </h3>
 
-                  {/* Descrição 
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {expertise.description}
-                  </p>
-*/}
                   {/* Highlights */}
-                  <div className="space-y-2 w-full">
+                  <div className="space-y-3 w-full text-left">
                     {expertise.highlights.map((highlight, idx) => (
-                      <div key={idx} className="flex items-center">
-                        <div className="w-2 h-2 bg-secondary rounded-full mr-3"></div>
-                        <span className="text-sm text-muted-foreground">{highlight}</span>
+                      <div key={idx} className="flex items-start">
+                        <div className="w-2 h-2 bg-secondary rounded-full mr-3 mt-1.5 flex-shrink-0"></div>
+                        <span className="text-sm text-muted-foreground text-justify">{highlight}</span>
                       </div>
                     ))}
                   </div>
