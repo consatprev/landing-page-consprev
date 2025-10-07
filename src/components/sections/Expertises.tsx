@@ -5,27 +5,39 @@ export const Expertises = () => {
     {
       icon: Scale,
       title: "Área Trabalhista",
-      //description: "Assessoria completa em direito do trabalho, rescisões, acordos e regularizações trabalhistas.",
-      highlights: ["Revisão de cálculos rescisórios", "Conciliações e acordos extrajudiciais", "Regularizações", 
-        "Apoio técnico para postular ou se defender em juízo (sem advogado)"]
+      highlights: [
+        "Revisão de cálculos rescisórios", 
+        "Conciliações e acordos extrajudiciais", 
+        "Regularizações", 
+        "Apoio técnico para postular ou se defender em juízo (sem advogado)"
+      ]
     },
     {
       icon: Users,
       title: "Área Previdenciária", 
-      //description: "Especialistas em benefícios previdenciários, aposentadorias e revisões do INSS.",
-      highlights: ["Aposentadorias", "Benefícios INSS", "Orientação para perícias médicas", "Revisões de aposentadorias"]
+      highlights: [
+        "Orientação para perícias médicas",
+        "Revisões de aposentadorias",
+        "Aposentadorias", 
+        "Benefícios INSS"
+      ]
     },
     {
       icon: HandHeart,
-      title: "Intermediação e Agenciamento",
-      //description: "Mediação e conciliação para resolução pacífica de conflitos trabalhistas e previdenciários.",
-      highlights: ["Intermediação jurídica para resolução de conflitos", "Agenciamento de serviços e negócios", 
-        "Conciliação e acordos extrajudiciais", "Preparação de documentos"]
+      title: "Intermediação e Agenciamento – Serviços e Negócios",
+      highlights: [
+        "Intermediação jurídica para resolução de conflitos", 
+        "Agenciamento de serviços e negócios", 
+        "Conciliações e acordos extrajudiciais",
+        "Facilitação ou representação para soluções de serviços e negócios",
+        "Preparação de documentos",
+        "Orientação processual e apoio técnico ao jus postulandi"
+      ]
     }
   ];
 
   return (
-    <section className="py-20 bg-muted">
+    <section id="areas-atuacao" className="py-20 bg-muted">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">

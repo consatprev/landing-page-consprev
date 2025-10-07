@@ -29,12 +29,12 @@ export const Hero = () => {
 
           {/* Título da Proposta */}
           <h2 className="text-2xl md:text-4xl font-semibold mb-4 leading-relaxed">
-            Evite multas e riscos com assessoria trabalhista especializada
+            Proteção Preventiva dos Direitos e Interesses de Pessoas Físicas e Jurídicas - Assessoria Especializada
           </h2>
 
           {/* Subtítulo */}
           <p className="text-lg md:text-xl mb-8 text-gray-100 max-w-2xl mx-auto">
-            Consultoria nas áreas previdenciária, trabalhista e conciliação
+            Consultoria em: Trabalhista e Previdenciária | Saúde e Segurança do Trabalho | Serviços e Negócios
           </p>
 
           {/* CTA Principal */}
@@ -48,6 +48,13 @@ export const Hero = () => {
               Solicite uma análise gratuita
             </CTAButton>
             
+            <button
+              onClick={() => document.getElementById('areas-atuacao')?.scrollIntoView({ behavior: 'smooth' })}
+              className="px-6 py-3 bg-green-600 hover:bg-green-700 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              Nossas Áreas de Atuação
+            </button>
+
             <CTAButton
               variant="secondary"
               size="lg"
@@ -61,11 +68,11 @@ export const Hero = () => {
           <div className="mt-12 flex flex-wrap justify-center gap-8 text-sm text-gray-200">
             <div className="flex items-center">
               <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>
-              + 100 casos resolvidos
+              +100% casos resolvidos
             </div>
             <div className="flex items-center">
               <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>
-              15 anos de experiência
+              20 anos de experiência
             </div>
             <div className="flex items-center">
               <div className="w-2 h-2 bg-secondary rounded-full mr-2"></div>

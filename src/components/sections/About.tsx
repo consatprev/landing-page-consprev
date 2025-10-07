@@ -3,24 +3,29 @@ import { Award, Target, Heart, TrendingUp } from "lucide-react";
 export const About = () => {
   const values = [
     {
+      icon: Heart,
+      title: "Empatia",
+      description: "Ouvimos com atenção e agimos com respeito"
+    },
+    {
       icon: Award,
-      title: "Comprometimento",
-      description: "Compromisso com a qualidade e resultados em cada caso"
+      title: "Ética",
+      description: "Nossa base é a integridade"
+    },
+    {
+      icon: TrendingUp,
+      title: "Resiliência",
+      description: "Superamos obstáculos com coragem"
     },
     {
       icon: Target,
-      title: "Precisão",
-      description: "Análises detalhadas e estratégias personalizadas"
+      title: "Comprometimento",
+      description: "Entregamos com excelência"
     },
     {
       icon: Heart,
       title: "Humanização",
-      description: "Atendimento próximo e compreensivo cada cliente é único e merece cuidado"
-    },
-    {
-      icon: TrendingUp,
-      title: "Resultados",
-      description: "Foco em soluções efetivas e benefícios reais"
+      description: "Cada cliente é único e merece cuidado"
     }
   ];
 
@@ -31,35 +36,34 @@ export const About = () => {
           {/* História da Empresa */}
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Quem Somos
+              Nossa História
             </h2>
+            
+            {/* Espaço reservado para imagem */}
+            <div className="mb-6 bg-muted rounded-xl p-12 text-center border-2 border-dashed border-border">
+              <p className="text-muted-foreground italic">(Espaço reservado para imagem)</p>
+            </div>
             
             <div className="prose prose-lg text-muted-foreground space-y-4">
               <p>
-                Com mais de <strong className="text-primary">15 anos de experiência</strong>, a ConsAt'preV 
-                nasceu da necessidade de oferecer assessoria jurídica especializada e humanizada 
-                nas áreas trabalhista e previdenciária.
+                A ConsAt'preV nasceu com o propósito de oferecer assessoria jurídica especializada e humanizada nas áreas trabalhista e previdenciária.
               </p>
               
               <p>
-                Nossa missão é <strong className="text-secondary">democratizar o acesso aos orgão públicos e à justiça</strong>, 
-                fornecendo orientação clara e eficiente para empresas e cidadãos que buscam 
-                regularizar sua situação e garantir seus direitos.
+                Nossa missão é <strong className="text-secondary">democratizar o acesso à Justiça e aos órgãos públicos</strong>, oferecendo orientação clara e eficiente para empresas e cidadãos que buscam regularizar sua situação e garantir seus direitos.
               </p>
               
               <p>
-                Através das nossas submarcas (marcas técnicas especializadas) - InterNegócios Soluções, BenSeg, InterContábil 
-                e InterMed - oferecemos um <strong className="text-primary">ecossistema completo</strong> 
-                de soluções jurídicas e empresariais.
+                Através de nossas submarcas — <strong className="text-primary">BenSeg, InterNegócios, InterContábil e InterJuridic</strong> — oferecemos um <strong className="text-primary">ecossistema completo</strong> de soluções jurídicas e empresariais.
               </p>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4">
               <div className="bg-primary/10 px-4 py-2 rounded-full">
-                <span className="text-primary font-semibold">+100 casos resolvidos</span>
+                <span className="text-primary font-semibold">+100% casos resolvidos</span>
               </div>
               <div className="bg-secondary/10 px-4 py-2 rounded-full">
-                <span className="text-secondary font-semibold">15 anos no mercado</span>
+                <span className="text-secondary font-semibold">20 anos de experiência</span>
               </div>
               <div className="bg-primary/10 px-4 py-2 rounded-full">
                 <span className="text-primary font-semibold">98% de aprovação</span>
@@ -67,24 +71,23 @@ export const About = () => {
             </div>
           </div>
 
-          {/* Valores */}
+          {/* Propósito e Valores */}
           <div>
-            <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
+            <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
               Nosso Propósito
             </h3>
-            <div className="prose prose-lg text-muted-foreground space-y-4">
-              <p>
-                Inspirar <strong className="text-primary">confiança, proteger direitos e promover dignidade</strong>. Transformamos desafios
-jurídicos em soluções que respeitam o ser humano em sua totalidade.
+            <div className="prose prose-lg text-muted-foreground text-center mb-8">
+              <p className="italic">
+                "Inspirar <strong className="text-primary">confiança</strong>, proteger <strong className="text-primary">direitos</strong> e promover <strong className="text-primary">dignidade</strong>. Transformamos desafios jurídicos em soluções que respeitam o ser humano em sua totalidade."
               </p>
             </div>
 
 
             <h3 className="text-2xl font-bold text-foreground mb-8 text-center">
-              Nossos Valores
+              Valores
             </h3>
             
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {values.map((value, index) => {
                 const IconComponent = value.icon;
                 return (

@@ -12,7 +12,7 @@ export const Services = () => {
 const servicosEmpresas = [
   {
     title: "Trabalho e Previdência",
-    description: "Oferecemos suporte técnico e informação detalhada para garantir que sua empresa cumpra os deveres previdenciários e aproveite todos os direitos. Acompanhamos requerimentos, revisões e asseguramos os melhores resultados.",
+    description: "Protegemos seu negócio, cuidando das pessoas. Foco humano com responsabilidade empresarial.",
     benefits: ["Cálculos precisos", "Controle de obrigações", "Relatórios gerenciais"]
   },
   {
@@ -22,7 +22,7 @@ const servicosEmpresas = [
   },
   {
     title: "Intermediação e Agenciamento de Serviços e Negócios",
-    description: "Conectando pequenas e médias empresas a soluções estratégicas, profissionais especializados e oportunidades comerciais que impulsionam resultados com segurança jurídica e eficiência operacional",
+    description: "Conectamos pequenas e médias empresas a soluções estratégicas, profissionais especializados e oportunidades comerciais que impulsionam resultados com segurança jurídica e eficiência operacional.",
     benefits: ["Eficiência operacional", "Soluções estratégicas", "Segurança jurídica"]
   },
   {
@@ -68,7 +68,7 @@ const servicosEmpresas = [
   },
   {
     title: "Pensões, Auxílios e Benefícios Sociais",
-    description: "Suporte completo para solicitar, acompanhar e manter seus benefícios sociais de forma eficaz  junto ao INSS ou previdência privada",
+    description: "Suporte completo junto ao INSS ou à previdência privada.",
     benefits: [
       "Requerimento e prorrogação de auxílio-doença",
       "Concessão e manutenção de pensão por morte",
@@ -92,7 +92,7 @@ const servicosEmpresas = [
       "Cálculo e reivindicação de verbas rescisórias",
       "Apoio em casos de assédio moral e direitos violados"
     ]
-  },
+  }
 ];
 
 
